@@ -19,7 +19,7 @@ class Person {
     }
 }
 
-public class PriorityQueueExample {
+public class PriorityQueueComparatorExample {
     public static void main(String[] args) {
         // Comparator를 구현하여 나이(age)를 기준으로 비교
         Comparator<Person> ageComparator = new Comparator<Person>() {
@@ -32,7 +32,7 @@ public class PriorityQueueExample {
         // 우선순위 큐 생성
         PriorityQueue<Person> priorityQueue = new PriorityQueue<>(ageComparator);
 
-        // 우선순위 큐에 Person 인스턴스 추가
+        // Person 인스턴스 추가
         priorityQueue.add(new Person("Alice", 25));
         priorityQueue.add(new Person("Bob", 30));
         priorityQueue.add(new Person("Charlie", 20));
@@ -44,3 +44,4 @@ public class PriorityQueueExample {
         }
     }
 }
+
